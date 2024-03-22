@@ -29,6 +29,7 @@ public class Candidate {
         this.coding = coding;
         this.interview = interview;
         
+        //calculate avg score
         if(this.mobile){
             this.choose = true;
             this.avg = writing * 0.2 + coding * 0.5 + interview * 0.3;
@@ -39,6 +40,7 @@ public class Candidate {
             System.out.println("pls input your division");
         }
         
+        //accepted is true if avg is more then 85
         accepted = (avg > 85);
     }
     
